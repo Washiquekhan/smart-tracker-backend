@@ -5,10 +5,7 @@ const app = express();
 app.use(express.json());
 
 // MongoDB connection
-mongoose.connect("mongodb://smarttracker-db:27017/smarttracker", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect("mongodb://localhost:27017/smarttracker" );
 
 const ProjectSchema = new mongoose.Schema({
   name: String,
