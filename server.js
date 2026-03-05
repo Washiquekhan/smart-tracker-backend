@@ -20,6 +20,13 @@ app.get("/", (req, res) => {
   res.send("🚀 Smart Hybrid Project Tracker API with Database is running!");
 });
 
+app.get("/health", (req, res) => {
+  res.json({
+    status: "OK",
+    service: "smart-tracker-backend",
+    time: new Date()
+  });
+});
 app.post("/project", async (req, res) => {
   const project = new Project(req.body);
   await project.save();
