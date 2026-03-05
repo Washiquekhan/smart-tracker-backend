@@ -1,31 +1,28 @@
-# Smart Hybrid Project Tracker Backend
+# Smart Hybrid Tracker Backend
 
-This is the backend API for the Smart Hybrid Project Tracker system.
-
-The project is built using modern backend technologies and deployed on AWS using Docker and MongoDB.
-
-## Features
-- REST API for project management
-- MongoDB database integration
-- Docker container deployment
-- Hosted on AWS EC2
-- Tested using Postman
+## Overview
+This backend service powers the Smart Hybrid Tracker system.  
+It manages API requests, database operations, and cloud storage integration.
 
 ## Tech Stack
 - Node.js
 - Express.js
 - MongoDB
-- Docker
 - AWS EC2
+- AWS S3
+- Docker
+- GitHub Actions (CI/CD)
 
-## API Endpoints
-- POST /project → Create a new project
-- GET /projects → Fetch all projects
+## Features
+- REST API backend
+- Cloud deployment on AWS EC2
+- File storage using AWS S3
+- Containerized backend using Docker
+- Automated CI/CD pipeline with GitHub Actions
 
 ## Deployment
-This backend is deployed on AWS EC2 using Docker containers.
+The backend is deployed on an AWS EC2 instance and containerized using Docker.  
+GitHub Actions automatically builds the project when new code is pushed.
 
 ## Author
-Washique Khan  
-B.Tech Student 
-SRM University
+Washique Khan
